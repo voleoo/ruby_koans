@@ -14,6 +14,8 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+	raise TriangleError if [a,b,c].min <= 0 or a+b < c or a+c == b
+
   # WRITE THIS CODE
   if a == b and b == c 
   	:equilateral
